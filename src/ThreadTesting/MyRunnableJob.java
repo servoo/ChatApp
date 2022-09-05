@@ -1,3 +1,5 @@
+package ThreadTesting;
+
 public class MyRunnableJob implements Runnable {
 
 
@@ -7,6 +9,12 @@ public class MyRunnableJob implements Runnable {
     }
 
     private void go() {
+        try {
+            Thread.sleep(5000);
+        } catch (Exception exception) {
+            System.out.println(exception);
+        }
+
         doMore();
     }
 
