@@ -85,7 +85,6 @@ public class SimpleClient {
         public void run() {
             String message;
             try {
-                System.out.println("Reading!");
                 while ((message = reader.readLine()) != null) {
                     incoming.append(message + "\n");
                 }
